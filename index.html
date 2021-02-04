@@ -4,57 +4,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Сайт</title>
 </head>
 
 <body>
-    <header>
-        <ul>
-            <li>
-                <a href="index.html">Главная</a>
-            </li>
-            <li>
-                <a href="contacts.html">Контакты</a>
-            </li>
-        </ul>
-    </header>
     <main>
-        <h1>Заголовок</h1>
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, sequi animi illum minima amet mollitia atque
-            tempore quia beatae consequatur excepturi dolor? Nulla dolore harum error distinctio tenetur commodi
-            accusamus.
-        </p>
-        <h3>Подзаголовок</h3>
-        <h4>Заголовок уровня 4</h4>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </p>
-        <h3>Заголовок уровня 3</h3>
-        <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        </p>
-        <h3>Заголовок уровня 3</h3>
-        <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit
-        </p>
-        <hr>
-        <p>
-            Все права защищены
-        </p>
+        <header class="header">
+            <div class="container">
+                <ul class="nav">
+                    <li class="nav__item nav__main">
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li class="nav__item nav__contact">
+                        <a href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+                <div class="min-content">
+                    <h1 class="h1">Заголовок</h1>
+                    <p class="paragraph">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, sequi animi illum minima amet
+                        mollitia
+                        atque
+                        tempore quia beatae consequatur excepturi dolor? Nulla dolore harum error distinctio tenetur
+                        commodi
+                        accusamus.
+                    </p>
+                </div>
+            </div>
+        </header>
+        <div class="what-we-do container">
+            <h3 class="what-we-do__heading">Заголовок уровня 3</h3>
+            <div class="what-we-do__table">
+                <div class="what-we-do__item">
+                    <h4 class="what-we-do__item-heading">Заголовок уровня 4</h4>
+                    <p class="what-we-do__item-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+                <div class="what-we-do__item">
+                    <h4 class="what-we-do__item-heading">Заголовок уровня 4</h4>
+                    <p class="what-we-do__item-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+                <div class="what-we-do__item">
+                    <h4 class="what-we-do__item-heading">Заголовок уровня 4</h4>
+                    <p class="what-we-do__item-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="finished-project container">
+            <h3 class="h3">Заголовок уровня 3</h3>
+            <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+        </div>
     </main>
-    <footer>
-        <h3>Заголовок уровня 3</h3>
-        <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, facilis.
-        </p>
-        <hr>
-        <ul>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>8 800 100 20 30</li>
-            <li>mail@email.com</li>
-        </ul>
-        <p>&copy; Все права защищены</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="offer">
+                <div class="work">
+                    <h3 class="work__heading">Заголовок уровня 3</h3>
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <ul class="contacts">
+                <li class="contacts__item">Lorem ipsum dolor sit amet.</li>
+                <li class="contacts__item">8 800 100 20 30</li>
+                <li class="contacts__item">mail@email.com</li>
+            </ul>
+            <div class="rights-reserved">
+                <p class="paragraph">&copy; Все права защищены</p>
+            </div>
+        </div>
     </footer>
 </body>
 
