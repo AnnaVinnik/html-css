@@ -102,7 +102,7 @@ body {
 }
 
 .what-we-do__item {
-    width: 359px;
+    max-width: 359px;
     padding: 32px;
     box-sizing: border-box;
     border-radius: 10px;
@@ -144,6 +144,11 @@ body {
     padding-bottom: 51px;
 }
 
+.project {
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
 .project_text {
     opacity: 1;
     text-align: center;
@@ -154,7 +159,6 @@ body {
 .project__parent {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     margin-top: 32px;
 }
 
@@ -180,6 +184,10 @@ body {
     top: 32px;
     left: 32px;
     font-size: 28px;
+}
+
+.project__img {
+    width: 100%;
 }
 
 .h1 {
@@ -247,6 +255,16 @@ body {
     .nav {
         padding-top: 5px;
     }
+    .what-we-do {
+        padding: 32px;
+        box-sizing: border-box;
+    }
+    .what-we-do__table {
+        flex-direction: column;
+    }
+    .what-we-do__item {
+        margin: 0 auto 32px;
+    }
 }
 
 @media (max-width: 667px) {
@@ -268,5 +286,18 @@ body {
     }
     .top-button {
         margin-top: 32px;
+    }
+    .what-we-do__item {
+        width: 100%;
+    }
+    .project__parent {
+        flex-direction: column;
+    }
+
+    .project__item {
+        justify-self: center;
+    }
+    .project__item_margin {
+        margin-right: 0;
     }
 }
